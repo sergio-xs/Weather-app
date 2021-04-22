@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+
+.app{
+  background-image: url("images/weather1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.7s ease-out;
+  background-attachment: fixed;
+}
+
+
+main{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+
+.comming-days{
+  text-align: center;
+  color: white;
+  background-color: #003a70;
+  max-width: 900px;
+  margin: 50px auto 10px;
+  border-radius: 10px;
+}
+
+.weekly-weather-box{
+  max-width: 900px;
+  margin: 0px auto;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.qytet{
+  display: block;
+  background-color: rgba(153, 140, 140, 0.5);
+  padding: 10px;
+
+}
+.select-city{
+
+display: block;
+  width: 20%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: black;
+
+  font-size: 20px;
+
+  transition: 0.4s ease;
+  margin: auto;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .select-city {
+     width: 60%; 
+     max-width: 60% !important;
+     font-size: 20px;
+  }
+  #error-handler{
+    width: 60% !important; 
+     max-width: 60% !important;
+  }
+}
