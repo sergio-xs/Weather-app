@@ -12,9 +12,10 @@ body{
 .app{
   background-image: url("images/weather1.jpg");
   background-size: cover;
-  background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: left top;
+
 }
 
 
